@@ -37,7 +37,7 @@ const VolleyballRegistration = () => {
         };
     
         const addMember = () => {
-            if (teamMembers.length < 9) {
+            if (teamMembers.length < 0) {
                 setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
             } else {
                 alert('You can only add up to 9 members.');
@@ -48,7 +48,7 @@ const VolleyballRegistration = () => {
             e.preventDefault();
     
     
-            if (teamMembers.length < 9) {
+            if (teamMembers.length < 0) {
                 alert("Please provide at least 9 team members.");
                 return;
             }
