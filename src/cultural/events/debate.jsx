@@ -126,7 +126,7 @@ const DebateRegistration = () => {
 
             <form onSubmit={handleSubmit}>
                 {/* Team Lead Section */}
-                <h4 className="text-lg text-gradient-to-r from-orange-500 to-indigo-600 mb-2">
+                <h4 className="text-lg text-custom-blue mb-2">
                     Team Lead Information
                 </h4>
                 <div className="mb-4">
@@ -297,7 +297,7 @@ const DebateRegistration = () => {
 
                 {/* Submit Button */}
                 <div className="text-center mt-6">
-                    <button type="submit" className="btn bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700">
+                    <button type="submit" className="btn bg-custom-blue text-white py-2 px-6 rounded-md 0">
                         Register
                     </button>
                 </div>

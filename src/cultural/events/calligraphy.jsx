@@ -109,7 +109,7 @@ const CalligraphyRegistration = () => {
     return (
         <div className="container mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg max-w-3xl">
             <h2 className="text-center text-orange-500 font-bold text-xl mb-4">
-                Debate Registration Form
+                Calligraphy Registration Form
             </h2>
 
             {/* Alert Message */}
@@ -126,7 +126,7 @@ const CalligraphyRegistration = () => {
 
             <form onSubmit={handleSubmit}>
                 {/* Team Lead Section */}
-                <h4 className="text-lg text-gradient-to-r from-orange-500 to-indigo-600 mb-2">
+                <h4 className="text-lg text-custom-blue mb-2">
                     Team Lead Information
                 </h4>
                 <div className="mb-4">
@@ -297,7 +297,7 @@ const CalligraphyRegistration = () => {
 
                 {/* Submit Button */}
                 <div className="text-center mt-6">
-                    <button type="submit" className="btn bg-indigo-600 text-white py-2 px-6 rounded-md hover:bg-indigo-700">
+                    <button type="submit" className="btn bg-custom-blue text-white py-2 px-6 rounded-md ">
                         Register
                     </button>
                 </div>
