@@ -37,10 +37,10 @@ const GirlsBoxCrickeRegistration = () => {
             };
         
             const addMember = () => {
-                if (teamMembers.length < 9) {
+                if (teamMembers.length < 0) {
                     setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
                 } else {
-                    alert('You can only add up to 9 members.');
+                    alert('You can only add up to 0 members.');
                 }
             };
         
@@ -48,8 +48,8 @@ const GirlsBoxCrickeRegistration = () => {
                 e.preventDefault();
         
         
-                if (teamMembers.length < 9) {
-                    alert("Please provide at least 9 team members.");
+                if (teamMembers.length < 0) {
+                    alert("Please provide at least 0 team members.");
                     return;
                 }
         
