@@ -46,12 +46,12 @@ const Home = () => {
         <div
             className={`${isMenuOpen ? "block" : "hidden"} md:flex flex-col md:flex-row md:items-center absolute md:relative top-16 md:top-0 left-0 w-full bg-white md:bg-transparent md:w-auto`}
         >
-            <a href="#hero-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Home</a>
-            <a href="#logo-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Logo</a>
-            <a href="#winners-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Winners</a>
-            <a href="#faculty-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Faculty</a>
-            <a href="#glimpse-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Glimpses</a>
-            <a href="#contact-section" className="block text-left px-6 py-2 md:py-0 text-white hover:text-blue-600">Contact</a>
+            <a href="#hero-section" className="block text-left px-6 py-2 md:py-0 text-black">Home</a>
+            <a href="#logo-section" className="block text-left px-6 py-2 md:py-0 text-black ">Logo</a>
+            <a href="#winners-section" className="block text-left px-6 py-2 md:py-0 text-black ">Winners</a>
+            <a href="#faculty-section" className="block text-left px-6 py-2 md:py-0 text-black ">Faculty</a>
+            <a href="#glimpse-section" className="block text-left px-6 py-2 md:py-0 text-black ">Glimpses</a>
+            <a href="#contact-section" className="block text-left px-6 py-2 md:py-0 text-black ">Contact</a>
         </div>
     </div>
 </nav>
