@@ -152,12 +152,12 @@ const TreasureHuntRegistration = () => {
                                 className="form-select w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                 required
                             >
-                        <option value="">Select Year</option>
-                        <option value="FE">First Year</option>
-                        <option value="SE">Second Year</option>
-                        <option value="TE">Third Year</option>
-                        <option value="BE">Fourth Year</option>
-                        <option value="BE">Fifth Year</option>
+                    <option value="">Select Year</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Fourth Year">Fourth Year</option>
+                    <option value="Fifth Year">Fifth Year</option>
                             </select>
                         </div>
         
