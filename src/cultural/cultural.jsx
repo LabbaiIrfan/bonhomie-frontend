@@ -128,12 +128,12 @@ const CulturalPage = () => {
         </div>
     </div>
     {isMenuOpen && (
-        <div className="md:hidden bg-blue-600 text-white py-4">
+        <div className="md:hidden bg-blue-600 text-black py-4">
             <div className="flex flex-col items-start space-y-2 ml-4">
-                <a href="#culturalEvents" className="py-2">Cultural Events</a>
-                <a href="#schedule" className="py-2">Event Schedule</a>
-                <a href="#testimonials" className="py-2">What Participants Say</a>
-                <a href="#contact" className="py-2">Contact</a>
+                <a href="#culturalEvents" className="py-2 text-black">Cultural Events</a>
+                <a href="#schedule" className="py-2 text-black ">Event Schedule</a>
+                <a href="#testimonials" className="py-2 text-black">What Participants Say</a>
+                <a href="#contact" className="py-2 text-black">Contact</a>
             </div>
         </div>
     )}
