@@ -109,7 +109,7 @@ const DoodlingRegistrationForm = () => {
                     <option value="First Year">First Year</option>
                     <option value="Second year">Second Year</option>
                     <option value="Third Year">Third Year</option>
-                    <option value="Forth Year">Fourth Year</option>
+                    <option value="Fourth Year">Fourth Year</option>
                     <option value="Fifth Year">Fifth Year</option>
             </select>
           </div>
