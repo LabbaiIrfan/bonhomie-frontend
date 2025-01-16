@@ -11,50 +11,52 @@ const Home = () => {
 
     return (
         <div className="bg-white text-gray-800 font-sans">
-        <nav className="bg-custom-blue shadow-md fixed w-full z-50">
-    <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo Image */}
-        <a href="#" className="text-2xl font-bold text-white">
-            <img 
-                src="/logo.png" 
-                alt="Bonhomie 2025 Logo" 
-                className="h-8 md:h-10" 
-            />
-        </a>
-        {/* Toggle Button for Mobile */}
-        <button
-            onClick={toggleMenu}
-            className="block md:hidden text-gray-600 focus:outline-none"
-        >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-            >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                />
-            </svg>
-        </button>
 
-        {/* Links (Responsive Dropdown) */}
-        <div
-            className={`${isMenuOpen ? "block" : "hidden"} md:flex flex-col md:flex-row md:items-center absolute md:relative top-16 md:top-0 left-0 w-full bg-white md:bg-transparent md:w-auto`}
-        >
-            <a href="#hero-section" className="block text-left px-6 py-2 md:py-0 text-black">Home</a>
-            <a href="#logo-section" className="block text-left px-6 py-2 md:py-0 text-black ">Logo</a>
-            <a href="#winners-section" className="block text-left px-6 py-2 md:py-0 text-black ">Winners</a>
-            <a href="#faculty-section" className="block text-left px-6 py-2 md:py-0 text-black ">Faculty</a>
-            <a href="#glimpse-section" className="block text-left px-6 py-2 md:py-0 text-black ">Glimpses</a>
-            <a href="#contact-section" className="block text-left px-6 py-2 md:py-0 text-black ">Contact</a>
-        </div>
-    </div>
-</nav>
+            <nav className="bg-blue-600 shadow-md fixed w-full z-50">
+                <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+                    {/* Logo Image */}
+                    <a href="#" className="text-2xl font-bold text-white">
+                        <img
+                            src="/logo.png"
+                            alt="Bonhomie 2025 Logo"
+                            className="h-8 md:h-10"
+                        />
+                    </a>
+                    {/* Toggle Button for Mobile */}
+                    <button
+                        onClick={toggleMenu}
+                        className="block md:hidden text-gray-600 focus:outline-none"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+
+                    {/* Links (Responsive Dropdown) */}
+                    <div
+                        className={`${isMenuOpen ? "block" : "hidden"} md:flex flex-col md:flex-row md:items-center absolute md:relative top-16 md:top-0 left-0 w-full bg-white md:bg-transparent md:w-auto`}
+                    >
+                        <a href="#hero-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Home</a>
+                        <a href="#logo-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Logo</a>
+                        <a href="#winners-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Winners</a>
+                        <a href="#faculty-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Faculty</a>
+                        <a href="#glimpse-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Glimpses</a>
+                        <a href="#contact-section" className="block text-left px-6 py-2 md:py-0 text-black md:text-white">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
 
             {/* Hero Section */}
             <header className="relative min-h-screen flex flex-col justify-center items-center text-white text-center overflow-hidden">
@@ -92,7 +94,6 @@ const Home = () => {
             <SectionWinners />
             <BonhomieEvent />
             {/* <SectionFaculty /> */}
-            <SectionContact />
         </div>
     );
 };
@@ -105,7 +106,7 @@ const SectionLogo = () => {
                 {/* Logo Section */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
                     <img
-                        src="/Bonhomie.png" 
+                        src="/Bonhomie.png"
                         alt="Event Logo"
                         className="mx-auto max-w-s hover:scale-110 transform duration-500"
                     />
@@ -155,14 +156,14 @@ const BonhomieEvent = () => {
             {/* Bonhomie 2022 Section */}
             <section className="flex flex-col-reverse md:flex-row items-center md:space-x-8 my-12 bg-white rounded-lg shadow-lg p-8">
                 <div className="w-full md:w-5/12 mt-6 md:mt-0 text-center md:text-left space-y-6">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-indigo-600">Bonhomie 2022 Highlights</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-600">Bonhomie 2022 Highlights</h2>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Watch the exciting highlights from the <span className="font-bold">Bonhomie 2022</span> sports and cultural fest! Enjoy electrifying performances, intense competitions, and moments that made this year unforgettable.
                     </p>
                     <a
                         href="https://www.youtube.com/watch?v=55GX9ODHhYM"
                         target="_blank"
-                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition ease-in-out duration-300"
+                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition ease-in-out duration-300"
                     >
                         View Highlights
                     </a>
@@ -182,14 +183,14 @@ const BonhomieEvent = () => {
             {/* Bonhomie 2020 Section */}
             <section className="flex flex-col-reverse md:flex-row items-center md:space-x-8 my-12 bg-white rounded-lg shadow-lg p-8">
                 <div className="w-full md:w-5/12 mt-6 md:mt-0 text-center md:text-left space-y-6">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-indigo-600">Bonhomie 2020 Highlights</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-600">Bonhomie 2020 Highlights</h2>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Relive the moments from <span className="font-bold">Bonhomie 2019</span>, where the energy was high, and the performances were off the charts. Watch the best moments of the festival unfold on screen!
                     </p>
                     <a
                         href="https://www.youtube.com/watch?v=BchAr1ZcIJE"
                         target="_blank"
-                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition ease-in-out duration-300"
+                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition ease-in-out duration-300"
                     >
                         View Highlights
                     </a>
@@ -209,14 +210,14 @@ const BonhomieEvent = () => {
             {/* Bonhomie 2019 Section */}
             <section className="flex flex-col-reverse md:flex-row items-center md:space-x-8 my-12 bg-white rounded-lg shadow-lg p-8">
                 <div className="w-full md:w-5/12 mt-6 md:mt-0 text-center md:text-left space-y-6">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-indigo-600">Bonhomie 2019 Highlights</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-600">Bonhomie 2019 Highlights</h2>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Take a trip down memory lane and watch the incredible moments from <span className="font-bold">Bonhomie 2019</span>! This video showcases the most thrilling competitions and artistic performances of that year.
                     </p>
                     <a
                         href="https://www.youtube.com/embed/t0bm5cGCHM4?si=OxWOT43bUtOYvqoE"
                         target="_blank"
-                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition ease-in-out duration-300"
+                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md transition ease-in-out duration-300"
                     >
                         View Highlights
                     </a>
@@ -236,14 +237,14 @@ const BonhomieEvent = () => {
             {/* Bonhomie 2018 Section */}
             <section className="flex flex-col-reverse md:flex-row items-center md:space-x-8 my-12 bg-white rounded-lg shadow-lg p-8">
                 <div className="w-full md:w-5/12 mt-6 md:mt-0 text-center md:text-left space-y-6">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-indigo-600">Bonhomie 2018 Highlights</h2>
+                    <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-600">Bonhomie 2018 Highlights</h2>
                     <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                         Watch the exciting highlights from the <span className="font-bold">Bonhomie 2018</span> sports and cultural fest! Enjoy electrifying performances, intense competitions, and moments that made this year unforgettable.
                     </p>
                     <a
                         href="https://www.youtube.com/watch?v=55GX9ODHhYM"
                         target="_blank"
-                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md transition ease-in-out duration-300"
+                        className="inline-block px-6 py-2 text-lg font-semibold text-white bg-blue-600 hover:bg-indigo-700 rounded-lg shadow-md transition ease-in-out duration-300"
                     >
                         View Highlights
                     </a>
@@ -260,7 +261,7 @@ const BonhomieEvent = () => {
                     </div>
                 </div>
             </section>
-            
+
         </div>
     );
 };
@@ -269,7 +270,7 @@ const SectionWinners = () => (
     <section id="winners-section" className="py-20 bg-gray-100">
         <h2 className="text-4xl font-bold text-blue-600 text-center mb-8">Past Events</h2>
         <p className="text-gray-700 text-center max-w-2xl mx-auto mb-10">
-        Reliving the energy, excitement, and unforgettable moments. Thank you to everyone who made it a grand success
+            Reliving the energy, excitement, and unforgettable moments. Thank you to everyone who made it a grand success
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <WinnerCard
@@ -297,19 +298,19 @@ const SectionWinners = () => (
 // WinnerCard Component
 const WinnerCard = ({ imgSrc, district, winner, description }) => (
     <div className="relative group">
-    <img
-      src={imgSrc}
-      alt={district}
-      className="w-full h-56 object-cover rounded-lg shadow-lg group-hover:scale-105 transform duration-300"
-    />
-    <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 rounded-lg group-hover:scale-105 duration-300" />
-    <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
-      <h3 className="text-xl font-bold">{district}</h3>
-      <p className="text-sm font-semibold">{winner}</p>
-      <p className="text-sm">{description}</p>
+        <img
+            src={imgSrc}
+            alt={district}
+            className="w-full h-56 object-cover rounded-lg shadow-lg group-hover:scale-105 transform duration-300"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60 rounded-lg group-hover:scale-105 duration-300" />
+        <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
+            <h3 className="text-xl font-bold">{district}</h3>
+            <p className="text-sm font-semibold">{winner}</p>
+            <p className="text-sm">{description}</p>
+        </div>
     </div>
-  </div>
-  
+
 );
 
 // const SectionFaculty = () => (
@@ -337,84 +338,7 @@ const FacultyCard = ({ imgSrc, name, title }) => (
         <p className="text-sm text-gray-600">{title}</p>
     </div>
 );
-// SectionContact Component
-const SectionContact = () => {
-    // State to store form data
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
 
-    // State to handle success/error messages
-    const [statusMessage, setStatusMessage] = useState('');
-
-    // Handle input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    // Handle form submission
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-
-        try {
-            const response = await axios.post('http://localhost:5000/api/contact', formData);
-            setStatusMessage('Message sent successfully!');
-            setFormData({ name: '', email: '', message: '' }); // Reset the form
-        } catch (error) {
-            console.error('Error submitting the form:', error);
-            setStatusMessage('Failed to send the message. Please try again.');
-        }
-    };
-
-    return (
-        <section id="contact-section" className="py-20 bg-white">
-            <h2 className="text-4xl font-bold text-blue-600 text-center mb-8">Contact Us</h2>
-            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
-                <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    className="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-400"
-                />
-                <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Your Email"
-                    className="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-400"
-                />
-                <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your Message"
-                    rows="6"
-                    className="w-full p-4 border border-gray-300 rounded-lg shadow-md focus:ring-2 focus:ring-blue-400"
-                />
-                <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg shadow-lg hover:bg-blue-700 transform hover:scale-105 duration-300"
-                >
-                    Send Message
-                </button>
-            </form>
-            {statusMessage && (
-                <p className="text-center mt-6 text-lg font-semibold">
-                    {statusMessage}
-                </p>
-            )}
-        </section>
-    );
-};
 
 
 

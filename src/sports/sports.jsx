@@ -270,40 +270,6 @@ const EventPage = () => {
         </div>
     </div>
 </section>
-
-            {/* Contact Section */}
-            <section id="contact" className="py-16 bg-blue-600 text-white">
-                <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-semibold">Get in Touch</h2>
-                    <p className="text-lg mt-4">Have questions? Reach out to us today!</p>
-                    <form className="mt-8 space-y-6">
-                        <input
-                            type="text"
-                            placeholder="Your Name"
-                            className="w-full p-4 rounded-md bg-gray-100 text-gray-800"
-                            aria-label="Name"
-                        />
-                        <input
-                            type="email"
-                            placeholder="Your Email"
-                            className="w-full p-4 rounded-md bg-gray-100 text-gray-800"
-                            aria-label="Email"
-                        />
-                        <textarea
-                            placeholder="Your Message"
-                            rows="4"
-                            className="w-full p-4 rounded-md bg-gray-100 text-gray-800"
-                            aria-label="Message"
-                        ></textarea>
-                        <button
-                            type="submit"
-                            className="w-full py-3 bg-bgcolor text-blue-600 font-semibold rounded-md hover:bg-gray-200"
-                        >
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-            </section>
         </div>
     );
 };

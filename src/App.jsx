@@ -1,4 +1,6 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import { Routes, Route } from 'react-router-dom';
 // Importing all necessary components for different pages and events
 
@@ -56,6 +58,7 @@ import ZaikaRegistration from './cultural/events/zaika';
 import StandupComedyRegistrationForm from './cultural/events/standup';
 import ExtemporeRegistration from './cultural/events/extempore.jsx';
 import VlogRegistration from './cultural/events/vlog.jsx';
+import CalligraphyRegistration from './cultural/events/calligraphy.jsx';
 
 // import PPTRegistration from './technical/events/ppt.jsx';
 import PosterRegistration from './technical/events/poster.jsx';
@@ -126,7 +129,10 @@ const App = () => {
                 <Route path="/zaika" element={<ZaikaRegistration />} /> {/* Zaika Food Stall Registration */}
                 <Route path="/standup" element={<StandupComedyRegistrationForm />} /> {/* Stand-up Comedy Registration */}
                 <Route path="/extempore" element={<ExtemporeRegistration />} /> {/* Stand-up Comedy Registration */}
+                <Route path="/calligraphy" element={<CalligraphyRegistration/>} /> {/* Stand-up Comedy Registration */}
                 <Route path="/vlog" element={<VlogRegistration />} /> {/* Stand-up Comedy Registration */}
+                
+                {/* Routes for technical events registration */}
                 <Route path="/autocad" element={<AutoCadRegistration />} /> {/* Stand-up Comedy Registration */}
                 <Route path="/poster" element={<PosterRegistration/>} /> {/* Stand-up Comedy Registration */}
                 {/* <Route path="/ppt" element={<PPTRegistration />} /> Stand-up Comedy Registration */}
