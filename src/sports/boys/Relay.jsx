@@ -37,7 +37,7 @@ const RelayRegistration = () => {
         };
     
         const addMember = () => {
-            if (teamMembers.length < 2) {
+            if (teamMembers.length < 0) {
                 setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
             } else {
                 alert('You can only add up to 2 members.');
@@ -48,7 +48,7 @@ const RelayRegistration = () => {
             e.preventDefault();
     
     
-            if (teamMembers.length < 2) {
+            if (teamMembers.length < 0) {
                 alert("Please provide at least 2 team members.");
                 return;
             }
