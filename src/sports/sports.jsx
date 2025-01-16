@@ -126,10 +126,10 @@ const EventPage = () => {
             </Link>
         </div>
         <div className="hidden md:flex space-x-8">
-            <a href="#sports" className="hover:text-gray-200">Sports Events</a>
-            <a href="#schedule" className="hover:text-gray-200">Event Schedule</a>
-            <a href="#testimonials" className="hover:text-gray-200">What Participants Say</a>
-            <a href="#contact" className="hover:text-gray-200">Contact</a>
+            <a href="#sports" >Sports Events</a>
+            <a href="#schedule" >Event Schedule</a>
+            <a href="#testimonials" >What Participants Say</a>
+            <a href="#contact">Contact</a>
         </div>
         <div className="md:hidden">
             <button
@@ -145,10 +145,10 @@ const EventPage = () => {
     {isMenuOpen && (
         <div className="md:hidden bg-blue-600 text-white py-4">
             <div className="flex flex-col items-start space-y-2 ml-4">
-                <a href="#sports" className="py-2">Sports Events</a>
-                <a href="#schedule" className="py-2">Event Schedule</a>
-                <a href="#testimonials" className="py-2">What Participants Say</a>
-                <a href="#contact" className="py-2">Contact</a>
+                <a href="#sports" className="py-2 text-black">Sports Events</a>
+                <a href="#schedule" className="py-2 text-black">Event Schedule</a>
+                <a href="#testimonials" className="py-2 text-black">What Participants Say</a>
+                <a href="#contact" className="py-2 text-black">Contact</a>
             </div>
         </div>
     )}
