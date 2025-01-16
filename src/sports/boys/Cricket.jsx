@@ -37,10 +37,10 @@ const CrickeRegistration = () => {
     };
 
     const addMember = () => {
-        if (teamMembers.length < 13) {
+        if (teamMembers.length < 0) {
             setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
         } else {
-            alert('You can only add up to 13 members.');
+            alert('You can only add up to 0 members.');
         }
     };
 
@@ -48,8 +48,8 @@ const CrickeRegistration = () => {
         e.preventDefault();
 
 
-        if (teamMembers.length < 13) {
-            alert("Please provide at least 13 team members.");
+        if (teamMembers.length < 0) {
+            alert("Please provide at least 0 team members.");
             return;
         }
 
