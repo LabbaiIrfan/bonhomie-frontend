@@ -259,6 +259,7 @@ const RelayRegistration = () => {
                                     <option value="CO">CO</option>
                                     <option value="AIML">AIML</option>
                                     <option value="DS">DS</option>
+                                    <option value="Bsc IT">Bsc IT</option>
                                     <option value="CIVIL">CIVIL</option>
                                     <option value="ME">ME</option>
                                     <option value="ELECTRICAL">ELECTRICAL</option>
