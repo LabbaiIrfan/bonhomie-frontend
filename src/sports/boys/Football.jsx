@@ -37,7 +37,7 @@ const FootballRegistration = () => {
         };
     
         const addMember = () => {
-            if (teamMembers.length < 9) {
+            if (teamMembers.length < 0) {
                 setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
             } else {
                 alert('You can only add up to 9 members.');
@@ -48,7 +48,7 @@ const FootballRegistration = () => {
             e.preventDefault();
     
     
-            if (teamMembers.length < 9) {
+            if (teamMembers.length < 0) {
                 alert("Please provide at least 9 team members.");
                 return;
             }
@@ -280,10 +280,12 @@ const FootballRegistration = () => {
                                     required
                                 >
                                     <option value="">Select Year</option>
-                                    <option value="FE">FE</option>
-                                    <option value="SE">SE</option>
-                                    <option value="TE">TE</option>
-                                    <option value="BE">BE</option>
+                    <option value="">Select Year</option>
+                    <option value="First Year">First Year</option>
+                    <option value="Second year">Second Year</option>
+                    <option value="Third Year">Third Year</option>
+                    <option value="Forth Year">Fourth Year</option>
+                    <option value="Fifth Year">Fifth Year</option>
                                 </select>
                             </div>
                         </div>
