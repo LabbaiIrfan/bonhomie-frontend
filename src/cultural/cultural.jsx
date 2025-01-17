@@ -168,15 +168,15 @@ const CulturalPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
                 <p className="text-lg text-gray-600">"The cultural event was mesmerizing! Every performance was a testament to the talent and creativity of our college."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Saniya Chandiwala, SOET</h4>
+                <h4 className="text-xl font-bold text-gray-800 mt-4">- Sahil Burud, SOET</h4>
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
                 <p className="text-lg text-gray-600">"From the decorations to the performances, everything about the cultural event was extraordinary. A truly memorable experience!"</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Rida Dhamaskar, Pharmacy</h4>
+                <h4 className="text-xl font-bold text-gray-800 mt-4">- Omkar Shedge, SOET</h4>
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
                 <p className="text-lg text-gray-600">"Being part of the cultural event was an absolute joy. The vibrant atmosphere and the energy of the crowd were unmatched."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Amaan Shaikh, Architecture</h4>
+                <h4 className="text-xl font-bold text-gray-800 mt-4">- Omeir, SOET</h4>
             </div>
         </div>
     </div>
