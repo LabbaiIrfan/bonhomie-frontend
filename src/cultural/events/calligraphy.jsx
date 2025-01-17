@@ -59,7 +59,7 @@ const CalligraphyRegistration = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-custom-blue">
+    <div className="min-h-screen flex items-center justify-center bg-bgcolor">
       <div className="w-full max-w-lg bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Calligraphy Registration Form
