@@ -60,8 +60,8 @@ import ExtemporeRegistration from './cultural/events/extempore.jsx';
 import VlogRegistration from './cultural/events/vlog.jsx';
 import CalligraphyRegistration from './cultural/events/calligraphy.jsx';
 
-// import PPTRegistration from './technical/events/ppt.jsx';
-import PosterRegistration from './technical/events/poster.jsx';
+import PPTRegistration from './technical/events/ppt.jsx';
+// import PosterRegistration from './technical/events/poster.jsx';
 import AutoCadRegistration from './technical/events/autocad.jsx';
 const App = () => {
     return (
