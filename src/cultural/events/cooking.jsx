@@ -13,7 +13,7 @@ const [teamMembers, setTeamMembers] = useState([
     { name: '', rollNo: '', department: '', year: '' },
 ]);
 
-const [eventName] = useState('Zaika');
+const [eventName] = useState('Cooking');
 const [eventType] = useState('both');
 const [eventCategory] = useState('group');
 
@@ -37,10 +37,10 @@ const handleMemberChange = (index, e) => {
 };
 
 const addMember = () => {
-    if (teamMembers.length < 2) {
+    if (teamMembers.length < 1) {
         setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
     } else {
-        alert('You can only add up to 2 members.');
+        alert('You can only add up to 1 members.');
     }
 };
 
@@ -48,8 +48,8 @@ const handleSubmit = async (e) => {
     e.preventDefault();
 
 
-    if (teamMembers.length < 2) {
-        alert("Please provide at least 2 team members.");
+    if (teamMembers.length < 1) {
+        alert("Please provide at least 1 team members.");
         return;
     }
 
@@ -109,7 +109,7 @@ const handleSubmit = async (e) => {
 return (
     <div className="container mx-auto mt-12 p-6 bg-white rounded-lg shadow-lg max-w-3xl">
         <h2 className="text-center text-orange-500 font-bold text-xl mb-4">
-            Zaika Registration Form
+            Cooking Registration Form
         </h2>
 
         {/* Alert Message */}
@@ -215,7 +215,7 @@ return (
             <h4 className="text-lg text-gradient-to-r from-orange-500 to-indigo-600 mb-2">
                 Team Member Details
             </h4>
-            <p className="text-red-500 mb-4">Note: Only 8 members</p>
+            <p className="text-red-500 mb-4">Note: Only 1 members</p>
 
             {teamMembers.map((member, index) => (
                 <div key={index}>
@@ -259,6 +259,7 @@ return (
                             <option value="AIML">AIML</option>
                             <option value="DS">DS</option>
                             <option value="CIVIL">CIVIL</option>
+                            <option value="Bsc IT">Bsc IT</option>
                             <option value="ME">ME</option>
                             <option value="ELECTRICAL">ELECTRICAL</option>
                             <option value="ECS">ECS</option>
@@ -277,11 +278,12 @@ return (
                             className="form-select w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                             required
                         >
-                            <option value="">Select Year</option>
-                            <option value="FE">FE</option>
-                            <option value="SE">SE</option>
-                            <option value="TE">TE</option>
-                            <option value="BE">BE</option>
+        <option value="">Select Year</option>
+        <option value="First Year">First Year</option>
+        <option value="Second year">Second Year</option>
+        <option value="Third Year">Third Year</option>
+        <option value="Fourth Year">Fourth Year</option>
+        <option value="Fifth Year">Fifth Year</option>
                         </select>
                     </div>
                 </div>
