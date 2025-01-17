@@ -261,7 +261,7 @@ const EventPage = () => {
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
                 <p className="text-lg text-gray-600">"The organization of the event was impeccable. It was great to see such passion and teamwork on display."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Fiza Peerkhan, Data Science</h4>
+                <h4 className="text-xl font-bold text-gray-800 mt-4">- Sanchit Tamboli, ECS</h4>
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
                 <p className="text-lg text-gray-600">"Participating in this sports event was a highlight of my college life. Kudos to the organizers for such a fantastic experience!"</p>
