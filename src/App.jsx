@@ -60,9 +60,9 @@ import ExtemporeRegistration from './cultural/events/extempore.jsx';
 import VlogRegistration from './cultural/events/vlog.jsx';
 import CalligraphyRegistration from './cultural/events/calligraphy.jsx';
 
-// import PPTRegistration from './technical/events/ppt.jsx';
+import PPTRegistration from './technical/events/ppt.jsx';
 import PosterRegistration from './technical/events/poster.jsx';
-import AutoCadRegistration from './technical/events/autocad.jsx';
+// import AutoCadRegistration from './technical/events/autocad.jsx';
 const App = () => {
     return (
         <div>
@@ -134,8 +134,8 @@ const App = () => {
                 
                 {/* Routes for technical events registration */}
                 <Route path="/autocad" element={<AutoCadRegistration />} /> {/* Stand-up Comedy Registration */}
-                <Route path="/poster" element={<PosterRegistration/>} /> {/* Stand-up Comedy Registration */}
-                {/* <Route path="/ppt" element={<PPTRegistration />} /> Stand-up Comedy Registration */}
+{/*                 <Route path="/poster" element={<PosterRegistration/>} /> {/* Stand-up Comedy Registration */} */}
+                <Route path="/ppt" element={<PPTRegistration />} /> Stand-up Comedy Registration
                 
                 
             </Routes>
