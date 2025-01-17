@@ -37,7 +37,7 @@ const TechnicalPage = () => {
 
             const culturalEvents = [
                 { imgSrc: "/autocad.png", title: "AutoCAD", to: "/autocad" },
-                { imgSrc: "../src/assets/ppt.png", title: "PPT Competition", to: "/ppt" },
+                { imgSrc: "/ppt.png", title: "PPT Competition", to: "/ppt" },
                 // { imgSrc: "/poster.png", title: "Poster Competition", to: "/poster" },
                 
             ];
