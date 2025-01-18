@@ -273,9 +273,9 @@ const SectionFaculty = () => (
             Meet the dedicated faculty members who are leading and organizing these events with passion and commitment.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            <FacultyCard imgSrc="https://via.placeholder.com/150" name="Shabaz Haque" title="COST,Advisor" />
-            <FacultyCard imgSrc="https://via.placeholder.com/150" name="Nusrath Junaidi" title="COST,  In-Charge" />
-            <FacultyCard imgSrc="https://via.placeholder.com/150" name="Irfan Jamkhandikar" title="Sports, In-Charge" />
+        <FacultyCard imgSrc="nusrath.png" name="Nusrath Junaidi" title="COST,  In-Charge" />
+        <FacultyCard imgSrc="/shabaz.png" name="Shabaz Haque" title="COST,Advisor" />
+        <FacultyCard imgSrc="irfan.png" name="Irfan Jamkhandikar" title="Sports, In-Charge" />
         </div>
     </section>
 );
