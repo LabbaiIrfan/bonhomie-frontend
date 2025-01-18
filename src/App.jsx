@@ -1,9 +1,8 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 import { Routes, Route } from 'react-router-dom';
-// Importing all necessary components for different pages and events
 
+// Importing components for different pages and events
 import Home from './components/landingpage';
 import Footer from './components/footer';
 import EventPage from './sports/sports';
@@ -13,7 +12,7 @@ import TechnicalPage from './technical/technical.jsx';
 // Importing registration components for boys' sports events
 import BoxCricketRegistration from './sports/boys/BoxCricket';
 import FootballRegistration from './sports/boys/Football';
-// import RelayRegistration from './sports/boys/Relay';
+import RelayRegistration from './sports/boys/Relay';
 import BadmintonRegistration from './sports/boys/Badminton';
 import ChessRegistration from './sports/boys/Chess';
 import DiscussThrowRegistration from './sports/boys/DisscussThrow';
@@ -60,15 +59,17 @@ import ExtemporeRegistration from './cultural/events/extempore.jsx';
 import VlogRegistration from './cultural/events/vlog.jsx';
 import CalligraphyRegistration from './cultural/events/calligraphy.jsx';
 
+// Importing registration components for technical events
 import PPTRegistration from './technical/events/ppt.jsx';
-// import PosterRegistration from './technical/events/poster.jsx';
+import PosterRegistration from './technical/events/poster.jsx';
 import AutoCadRegistration from './technical/events/autocad.jsx';
+
 const App = () => {
     return (
         <div>
             {/* Defining the routing for different pages and events */}
             <Routes>
-                {/* Route for home page */}
+                {/* Route for the home page */}
                 <Route path="/" element={<Home />} />
 
                 {/* Route for sports events page */}
@@ -82,19 +83,19 @@ const App = () => {
 
                 {/* Routes for boys' sports events */}
                 <Route path="/boysboxcricket" element={<BoxCricketRegistration />} /> {/* Boys' Box Cricket Registration */}
-                {/* <Route path="/boysrelay" element={<RelayRegistration />} /> Boys' Relay Registration */}
+                <Route path="/boysrelay" element={<RelayRegistration />} /> {/* Boys' Relay Registration */}
                 <Route path="/boysfootball" element={<FootballRegistration />} /> {/* Boys' Football Registration */}
                 <Route path="/boysbadminton" element={<BadmintonRegistration />} /> {/* Boys' Badminton Registration */}
                 <Route path="/boyschess" element={<ChessRegistration />} /> {/* Boys' Chess Registration */}
-                <Route path="/boysdiscuss" element={<DiscussThrowRegistration />} /> 
+                <Route path="/boysdiscuss" element={<DiscussThrowRegistration />} /> {/* Boys' Discuss Throw Registration */}
                 <Route path="/boyspushup" element={<PushupsRegistration />} /> {/* Boys' Pushups Registration */}
                 <Route path="/boysrunning" element={<RunningRaceRegistration />} /> {/* Boys' Running Race Registration */}
                 <Route path="/boysshotput" element={<ShotputRegistration />} /> {/* Boys' Shotput Registration */}
-                <Route path="/boysvolleyball" element={<VolleyballRegistration />} /> 
-                <Route path="/boysBGMI" element={<BGMIRegistrationForm/>} /> 
-                <Route path="/boyscricket" element={<CricketRegistration />} /> 
-                <Route path="/boyscarrom" element={<CarromRegistration />} /> 
-                <Route path="/boystabletennis" element={<TabletennisRegistration/>} />
+                <Route path="/boysvolleyball" element={<VolleyballRegistration />} /> {/* Boys' Volleyball Registration */}
+                <Route path="/boysBGMI" element={<BGMIRegistrationForm />} /> {/* Boys' BGMI Registration */}
+                <Route path="/boyscricket" element={<CricketRegistration />} /> {/* Boys' Cricket Registration */}
+                <Route path="/boyscarrom" element={<CarromRegistration />} /> {/* Boys' Carrom Registration */}
+                <Route path="/boystabletennis" element={<TabletennisRegistration />} /> {/* Boys' Table Tennis Registration */}
 
                 {/* Routes for girls' sports events */}
                 <Route path="/girlsbadminton" element={<GirlsBadmintonRegistration />} /> {/* Girls' Badminton Registration */}
@@ -104,15 +105,13 @@ const App = () => {
                 <Route path="/girlschess" element={<GirlsChessRegistration />} /> {/* Girls' Chess Registration */}
                 <Route path="/girlsshotput" element={<GirlsShotputRegistration />} /> {/* Girls' Shotput Registration */}
                 <Route path="/girlsrunning" element={<GirlsRunningRaceRegistration />} /> {/* Girls' Running Race Registration */}
-                {/* <Route path="/girlsdiscuss" element={<GirlsDiscussThrowRegistration />} /> */}
-                <Route path="/girlsdiscuss" element={<GirlsDiscussThrowRegistration/>} /> 
-                <Route path="/girlsvolleyball" element={<GirlsVolleyballRegistration/>} /> 
-                <Route path="/girlsthreelegrace" element={<GirlsThreeLegRaceRegistration/>} /> 
-                <Route path="/girlsthrowball" element={<GirlsThrowBallRegistration />} />
-                <Route path="/girlsarmwrestling" element={<GirlsArmwrestlingRegistration />} />
-                <Route path="/girlscarrom" element={<GirlsCarromRegistration/>} /> 
-                
-                
+                <Route path="/girlsdiscuss" element={<GirlsDiscussThrowRegistration />} /> {/* Girls' Discuss Throw Registration */}
+                <Route path="/girlsvolleyball" element={<GirlsVolleyballRegistration />} /> {/* Girls' Volleyball Registration */}
+                <Route path="/girlsthreelegrace" element={<GirlsThreeLegRaceRegistration />} /> {/* Girls' Three Leg Race Registration */}
+                <Route path="/girlsthrowball" element={<GirlsThrowBallRegistration />} /> {/* Girls' Throwball Registration */}
+                <Route path="/girlsarmwrestling" element={<GirlsArmwrestlingRegistration />} /> {/* Girls' Armwrestling Registration */}
+                <Route path="/girlscarrom" element={<GirlsCarromRegistration />} /> {/* Girls' Carrom Registration */}
+
                 {/* Routes for cultural events registration */}
                 <Route path="/cooking" element={<CookingCompetitionRegistration />} /> {/* Cooking Competition Registration */}
                 <Route path="/debate" element={<DebateRegistration />} /> {/* Debate Registration */}
@@ -128,19 +127,18 @@ const App = () => {
                 <Route path="/treasure" element={<TreasureHuntRegistration />} /> {/* Treasure Hunt Registration */}
                 <Route path="/zaika" element={<ZaikaRegistration />} /> {/* Zaika Food Stall Registration */}
                 <Route path="/standup" element={<StandupComedyRegistrationForm />} /> {/* Stand-up Comedy Registration */}
-                <Route path="/extempore" element={<ExtemporeRegistration />} /> {/* Stand-up Comedy Registration */}
-                <Route path="/calligraphy" element={<CalligraphyRegistration/>} /> {/* Stand-up Comedy Registration */}
-                <Route path="/vlog" element={<VlogRegistration />} /> {/* Stand-up Comedy Registration */}
-                
+                <Route path="/extempore" element={<ExtemporeRegistration />} /> {/* Extempore Registration */}
+                <Route path="/calligraphy" element={<CalligraphyRegistration />} /> {/* Calligraphy Registration */}
+                <Route path="/vlog" element={<VlogRegistration />} /> {/* Vlog Registration */}
+
                 {/* Routes for technical events registration */}
-                <Route path="/autocad" element={<AutoCadRegistration />} /> {/* Stand-up Comedy Registration */}
-{/*                 <Route path="/poster" element={<PosterRegistration/>} /> {/* Stand-up Comedy Registration */} */}
-                <Route path="/ppt" element={<PPTRegistration />} /> Stand-up Comedy Registration
-                
+                <Route path="/autocad" element={<AutoCadRegistration />} /> {/* AutoCad Registration */}
+                <Route path="/poster" element={<PosterRegistration />} /> {/* Poster Registration */}
+                <Route path="/ppt" element={<PPTRegistration />} /> {/* PPT Registration */}
                 
             </Routes>
 
-            {/* Footer */}
+            {/* Footer Component */}
             <Footer />
         </div>
     );

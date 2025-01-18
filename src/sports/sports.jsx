@@ -21,13 +21,6 @@ const EventPage = () => {
                             <Link to={to} className="register-link px-4 py-2 mb-7 font-bold rounded">
                                 Register
                             </Link>
-                            {rule ? (
-                                <Link to={rule} className="register-link px-4 py-2 mb-7 font-bold rounded">
-                                    View Rules
-                                </Link>
-                            ) : (
-                                <p className="text-gray-500">Rules not available</p>
-                            )}
                         </div>
                     </div>
                 </div>
@@ -114,12 +107,12 @@ const EventPage = () => {
     return (
         
         <div className="bg-bgcolor">
-            <nav className="bg-blue-600 text-white py-4">
+            <nav className="bg-fgcolor text-white py-4">
     <div className="container mx-auto flex justify-between items-center px-4">
         <div className="text-2xl font-bold">
             <Link to="/">
                 <img 
-                    src="/logo.png" 
+                    src="/bonhomiee.png" 
                     alt="SportsFest Logo" 
                     className="h-8 md:h-12" 
                 />
@@ -158,28 +151,28 @@ const EventPage = () => {
             <div id="sports" className="flex justify-center flex-wrap p-6 gap-6">
                 <button
                     onClick={() => setSelectedCategory("boysIndividual")}
-                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-blue-400 hover:scale-105 active:scale-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-fgcolor rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-custom-grey hover:scale-105 active:scale-100 "
                 >
                     Boys Individual Sports
                 </button>
 
                 <button
                     onClick={() => setSelectedCategory("boysGroup")}
-                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-blue-400 hover:scale-105 active:scale-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-fgcolor rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-custom-grey hover:scale-105 active:scale-100 "
                 >
                     Boys Group Sports
                 </button>
 
                 <button
                     onClick={() => setSelectedCategory("girlsIndividual")}
-                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-blue-400 hover:scale-105 active:scale-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-fgcolor rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-custom-grey hover:scale-105 active:scale-100 r"
                 >
                     Girls Individual Sports
                 </button>
 
                 <button
                     onClick={() => setSelectedCategory("girlsGroup")}
-                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-blue-600 rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-blue-400 hover:scale-105 active:scale-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-60 px-6 py-3 text-lg font-semibold text-white bg-fgcolor rounded-lg transition-transform duration-300 ease-in-out transform hover:bg-custom-grey hover:scale-105 active:scale-100 "
                 >
                     Girls Group Sports
                 </button>
@@ -190,7 +183,7 @@ const EventPage = () => {
                 {selectedCategory === "boysIndividual" && (
                     <section id="boysIndividualSports" className="py-16 bg-bgcolor">
                         <div className="container mx-auto px-4">
-                            <h2 className="text-center text-3xl font-semibold text-black">
+                            <h2 className="text-center text-3xl font-semibold text-white">
                                 Boys Individual Sports Events
                             </h2>
                             <div className="flex flex-wrap justify-center gap-6 mt-10">
@@ -204,7 +197,7 @@ const EventPage = () => {
                 {selectedCategory === "boysGroup" && (
                     <section id="boysGroupSports" className="py-16 bg-bgcolor">
                         <div className="container mx-auto px-4">
-                            <h2 className="text-center text-3xl font-semibold text-black">
+                            <h2 className="text-center text-3xl font-semibold text-white">
                                 Boys Group Sports Events
                             </h2>
                             <div className="flex flex-wrap justify-center gap-6 mt-10">
@@ -218,7 +211,7 @@ const EventPage = () => {
                 {selectedCategory === "girlsIndividual" && (
                     <section id="girlsIndividualSports" className="py-16 bg-bgcolor">
                         <div className="container mx-auto px-4">
-                            <h2 className="text-center text-3xl font-semibold text-black">
+                            <h2 className="text-center text-3xl font-semibold text-white">
                                 Girls Individual Sports Events
                             </h2>
                             <div className="flex flex-wrap justify-center gap-6 mt-10">
@@ -232,7 +225,7 @@ const EventPage = () => {
                 {selectedCategory === "girlsGroup" && (
                     <section id="girlsGroupSports" className="py-16 bg-bgcolor">
                         <div className="container mx-auto px-4">
-                            <h2 className="text-center text-3xl font-semibold text-black">
+                            <h2 className="text-center text-3xl font-semibold text-white">
                                 Girls Group Sports Events
                             </h2>
                             <div className="flex flex-wrap justify-center gap-6 mt-10">
@@ -253,19 +246,19 @@ const EventPage = () => {
 
 <section id="testimonials" className="py-16 bg-bgcolor">
     <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-semibold text-gray-800">What Participants Say</h2>
+        <h2 className="text-3xl font-semibold text-white">What Participants Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"The sports event was exhilarating! The energy and enthusiasm of everyone made it a memorable experience."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Shaikh Irfan, BScIT</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"The sports event was exhilarating! The energy and enthusiasm of everyone made it a memorable experience."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Shaikh Irfan, BScIT</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"The organization of the event was impeccable. It was great to see such passion and teamwork on display."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Sanchit Tamboli, ECS</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"The organization of the event was impeccable. It was great to see such passion and teamwork on display."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Sanchit Tamboli, ECS</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"Participating in this sports event was a highlight of my college life. Kudos to the organizers for such a fantastic experience!"</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Aayesha Pasha, SOET</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"Participating in this sports event was a highlight of my college life. Kudos to the organizers for such a fantastic experience!"</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Aayesha Pasha, SOET</h4>
             </div>
         </div>
     </div>

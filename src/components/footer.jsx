@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="text-center text-white bg-blue-600 w-full">
+        <footer className="text-center text-white bg-fgcolor w-full">
             {/* Grid container */}
             <div className="px-4 py-6 max-w-7xl mx-auto">
                 {/* Section: Links */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* Logo and Text */}
                     <div className="text-center">
-                    <img src="/logo.png" alt="Company Logo" className="mb-2 w-full max-w-md mx-auto" />
+                    <img src="/bonhomiee.png" alt="Company Logo" className="mb-2 w-full max-w-md mx-auto" />
                         <p className="text-white">Designed and Developed by the Technical Secretary, SOET</p>
                     </div>
 

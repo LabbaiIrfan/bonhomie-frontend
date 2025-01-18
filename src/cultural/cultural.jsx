@@ -22,13 +22,6 @@ const CulturalPage = () => {
                                 <Link to={to} className="register-link px-4 py-2 mb-7 font-bold rounded">
                                     Register
                                 </Link>
-                                {rule ? (
-                                    <Link to={rule} className="register-link px-4 py-2 mb-7 font-bold rounded">
-                                        View Rules
-                                    </Link>
-                                ) : (
-                                    <p className="text-gray-500">Rules not available</p>
-                                )}
                             </div>
                         </div>
                     </div>
@@ -101,13 +94,13 @@ const CulturalPage = () => {
     return (
         <div>
             {/* Navbar */}
-            <nav className="bg-blue-600 text-white py-4">
+            <nav className="bg-fgcolor text-white py-4">
     <div className="container mx-auto flex justify-between items-center px-4">
         {/* Replace text with an image */}
         <div className="text-2xl font-bold">
             <Link to="/">
                 <img 
-                    src="/logo.png" 
+                    src="/bonhomiee.png" 
                     alt="CulturalFest Logo" 
                     className="h-8 md:h-12" 
                 />
@@ -146,7 +139,7 @@ const CulturalPage = () => {
             {/* Cultural Events Section */}
             <section id="culturalEvents" className="py-16 bg-bgcolor">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-center text-3xl font-semibold text-black">Cultural Events</h2>
+                    <h2 className="text-center text-3xl font-semibold text-white">Cultural Events</h2>
                     <div className="flex flex-wrap justify-center gap-8 mt-10">
                         {renderCards(culturalEvents)}
                     </div>
@@ -164,19 +157,19 @@ const CulturalPage = () => {
             {/* Testimonials Section */}
             <section id="testimonials" className="py-16 bg-bgcolor">
     <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-semibold text-gray-800">What Participants Say</h2>
+        <h2 className="text-3xl font-semibold text-white">What Participants Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"The cultural event was mesmerizing! Every performance was a testament to the talent and creativity of our college."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Sahil Burud, SOET</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"The cultural event was mesmerizing! Every performance was a testament to the talent and creativity of our college."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Sahil Burud, SOET</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"From the decorations to the performances, everything about the cultural event was extraordinary. A truly memorable experience!"</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Omkar Shedge, SOET</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"From the decorations to the performances, everything about the cultural event was extraordinary. A truly memorable experience!"</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Omkar Shedge, SOET</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"Being part of the cultural event was an absolute joy. The vibrant atmosphere and the energy of the crowd were unmatched."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Omeir, SOET</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"Being part of the cultural event was an absolute joy. The vibrant atmosphere and the energy of the crowd were unmatched."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Maryam Deshmukh, Bsc IT</h4>
             </div>
         </div>
     </div>

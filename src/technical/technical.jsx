@@ -38,7 +38,7 @@ const TechnicalPage = () => {
             const culturalEvents = [
                 { imgSrc: "/autocad.png", title: "AutoCAD", to: "/autocad" },
                 { imgSrc: "/ppt.png", title: "PPT Competition", to: "/ppt" },
-                // { imgSrc: "/poster.png", title: "Poster Competition", to: "/poster" },
+                { imgSrc: "/poster.png", title: "Poster Competition", to: "/poster" },
                 
             ];
     // const eventSchedule = [
@@ -85,13 +85,13 @@ const TechnicalPage = () => {
     return (
         <div>
             {/* Navbar */}
-            <nav className="bg-blue-600 text-white py-4">
+            <nav className="bg-fgcolor text-white py-4">
     <div className="container mx-auto flex justify-between items-center px-4">
         {/* Replace text with an image */}
         <div className="text-2xl font-bold">
             <Link to="/">
                 <img 
-                    src="/logo.png" 
+                    src="/bonhomiee.png" 
                     alt="CulturalFest Logo" 
                     className="h-8 md:h-12" 
                 />
@@ -130,7 +130,7 @@ const TechnicalPage = () => {
             {/* Cultural Events Section */}
             <section id="culturalEvents" className="py-16 bg-bgcolor">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-center text-3xl font-semibold text-black">Technical Events</h2>
+                    <h2 className="text-center text-3xl font-semibold text-white">Technical Events</h2>
                     <div className="flex flex-wrap justify-center gap-8 mt-10">
                         {renderCards(culturalEvents)}
                     </div>
@@ -148,19 +148,19 @@ const TechnicalPage = () => {
             {/* Testimonials Section */}
             <section id="testimonials" className="py-16 bg-bgcolor">
     <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-semibold text-gray-800">What Participants Say</h2>
+        <h2 className="text-3xl font-semibold text-white">What Participants Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"The technical workshops were incredibly informative. I gained hands-on experience with the latest tools and technologies."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Rohan Mehta, Computer Science</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"The technical workshops were incredibly informative. I gained hands-on experience with the latest tools and technologies."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Rohan Mehta, Computer Science</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"Participating in the hackathon was a challenging yet rewarding experience. It pushed my problem-solving skills to the next level."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Afreen Khan, Electronics Engineering</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"Participating in the hackathon was a challenging yet rewarding experience. It pushed my problem-solving skills to the next level."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Afreen Khan, Electronics Engineering</h4>
             </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md">
-                <p className="text-lg text-gray-600">"The technical events were well-organized, and the competitive atmosphere was electrifying. A fantastic opportunity to showcase my skills."</p>
-                <h4 className="text-xl font-bold text-gray-800 mt-4">- Junaid Mulla, Information Technology</h4>
+            <div className="bg-fgcolor p-6 rounded-lg shadow-lg max-w-md">
+                <p className="text-lg text-white">"The technical events were well-organized, and the competitive atmosphere was electrifying. A fantastic opportunity to showcase my skills."</p>
+                <h4 className="text-xl font-bold text-white mt-4">- Ayesha Qureshi, Bsc IT</h4>
             </div>
         </div>
     </div>

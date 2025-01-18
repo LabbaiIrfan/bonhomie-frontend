@@ -5,8 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-blue': '#4A90E2',
-        'bgcolor': '#ffffff',
+        'custom-blue': '#29A9E0',
+        'fgcolor':'#48494B',
+        'bgcolor': '#071D32',
+        'custom-grey':'#808080'
         
       },
     },
