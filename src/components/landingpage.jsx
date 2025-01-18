@@ -274,7 +274,7 @@ const SectionFaculty = () => (
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         <FacultyCard imgSrc="nusrath.png" name="Nusrath Junaidi" title="COST,  In-Charge" />
-        <FacultyCard imgSrc="/Shabaz.png" name="Shabaz Haque" title="COST,Advisor" />
+        <FacultyCard imgSrc="Shabaz.png" name="Shabaz Haque" title="COST,Advisor" />
         <FacultyCard imgSrc="irfan.png" name="Irfan Jamkhandikar" title="Sports, In-Charge" />
         </div>
     </section>
