@@ -216,7 +216,7 @@ const PPTRegistration = () => {
                         <h4 className="text-lg text-gradient-to-r from-orange-500 to-indigo-600 mb-2">
                             Team Member Details
                         </h4>
-                        <p className="text-red-500 mb-4">Note: Only 8 members</p>
+                        <p className="text-red-500 mb-4">Note: Only 1 members</p>
         
                         {teamMembers.map((member, index) => (
                             <div key={index}>
