@@ -37,10 +37,10 @@ const PPTRegistration = () => {
             };
         
             const addMember = () => {
-                if (teamMembers.length < 2) {
+                if (teamMembers.length < 1) {
                     setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
                 } else {
-                    alert('You can only add up to 2 members.');
+                    alert('You can only add up to 1 members.');
                 }
             };
         
@@ -49,7 +49,7 @@ const PPTRegistration = () => {
         
         
                 if (teamMembers.length < 2) {
-                    alert("Please provide at least 2 team members.");
+                    alert("Please provide at least 1 team members.");
                     return;
                 }
         
@@ -154,11 +154,11 @@ const PPTRegistration = () => {
                                 required
                             >
                             <option value="">Select Year</option>
-                            <option value="FE">First Year</option>
-                            <option value="SE">Second Year</option>
-                            <option value="TE">Third Year</option>
-                            <option value="BE">Fourth Year</option>
-                            <option value="BE">Fifth Year</option>
+                            <option value="First Year">First Year</option>
+                            <option value="Second Year">Second Year</option>
+                            <option value="Third year">Third Year</option>
+                            <option value="Fourth Year">Fourth Year</option>
+                            <option value="Fifth Year">Fifth Year</option>
                             </select>
                         </div>
         
@@ -260,6 +260,7 @@ const PPTRegistration = () => {
                                         <option value="AIML">AIML</option>
                                         <option value="DS">DS</option>
                                         <option value="CIVIL">CIVIL</option>
+                                        <option value="Bsc IT">Bsci IT</option>
                                         <option value="ME">ME</option>
                                         <option value="ELECTRICAL">ELECTRICAL</option>
                                         <option value="ECS">ECS</option>
@@ -278,11 +279,12 @@ const PPTRegistration = () => {
                                         className="form-select w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
                                         required
                                     >
-                                        <option value="">Select Year</option>
-                                        <option value="FE">FE</option>
-                                        <option value="SE">SE</option>
-                                        <option value="TE">TE</option>
-                                        <option value="BE">BE</option>
+                            <option value="">Select Year</option>
+                            <option value="First Year">First Year</option>
+                            <option value="Second Year">Second Year</option>
+                            <option value="Third year">Third Year</option>
+                            <option value="Fourth Year">Fourth Year</option>
+                            <option value="Fifth Year">Fifth Year</option>
                                     </select>
                                 </div>
                             </div>
