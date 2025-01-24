@@ -37,7 +37,7 @@ const PPTRegistration = () => {
             };
         
             const addMember = () => {
-                if (teamMembers.length < 1) {
+                if (teamMembers.length < 0) {
                     setTeamMembers([...teamMembers, { name: '', rollNo: '', department: '', year: '' }]);
                 } else {
                     alert('You can only add up to 1 members.');
@@ -48,7 +48,7 @@ const PPTRegistration = () => {
                 e.preventDefault();
         
         
-                if (teamMembers.length < 2) {
+                if (teamMembers.length < 0) {
                     alert("Please provide at least 1 team members.");
                     return;
                 }
